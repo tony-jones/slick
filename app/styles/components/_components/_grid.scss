@@ -43,3 +43,18 @@
 .grid--baseline {
   align-self: baseline;
 }
+
+// Small screens from 320px to 480px
+@include breakpoint(small) {
+  float: left;
+}
+
+// Medium screens from 480px to 840px
+@include breakpoint(medium) {
+  float: left;
+}
+
+// Large screens from 840px and larger
+@include breakpoint(large) {
+  float: left;
+}
