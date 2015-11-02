@@ -1,19 +1,23 @@
 // Grid
 
+// Block for grid layout
 .grid {
   display: flex; // Set parent container to flex
   flex-direction: row; // Flex items are stacked in a row from left-to-right
   flex-wrap: wrap; // Flex items are displayed in multiple rows if needed.
 
-  &.no-padding {
+  // Remove padding from outer container
+  &.grid--no-space {
     padding: 0;
-  }
 
-  &.no-margin {
-    margin: 0;
+    // Remove margin from cells if no space is chosen
+    .grid__cell {
+      margin: 0;
+    }
   }
 }
 
+// Grid cell element
 .grid__cell {
   box-sizing: border-box;
   flex: 1;
@@ -46,15 +50,15 @@
 
 // Small screens from 320px to 480px
 @include breakpoint(small) {
-  float: left;
+  flex: 0 0 40%;
 }
 
 // Medium screens from 480px to 840px
 @include breakpoint(medium) {
-  float: left;
+  flex: 0 0 40%;
 }
 
 // Large screens from 840px and larger
 @include breakpoint(large) {
-  float: left;
+  flex: 0 0 40%;
 }
