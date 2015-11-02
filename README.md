@@ -9,8 +9,10 @@ I have read in the past. Hence the name Frankenstein.
 ## Use in Your project
 
 CDN links to come with examples of how to include in your HTML
+will use https://cdnjs.com/ to host frankenstein.css and frankenstein.js
+Version for development and minified version for production.
 
-## Quickstart
+## Building From Source
 
 Clone this repository and build on what is included in the `app` directory.
 

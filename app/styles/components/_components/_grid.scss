@@ -1,13 +1,23 @@
 // Grid
+// Device Breakpoints @see https://www.google.com/design/spec/layout/adaptive-ui.html
 
 .grid {
   display: flex; // Set parent container to flex
   flex-direction: row; // Flex items are stacked in a row from left-to-right
   flex-wrap: wrap; // Flex items are displayed in multiple rows if needed.
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  &.no-margin {
+    margin: 0;
+  }
 }
 
 .cell {
   box-sizing: border-box;
+  flex: 1;
 }
 
 // Align items to the top of the container
@@ -34,3 +44,10 @@
 .grid--baseline {
   align-self: baseline;
 }
+
+// .cell-width-20 {
+//   flex: 0 0 20%;
+// }
+// .cell-offset-20 {
+//   margin-left: 20%;
+// }
