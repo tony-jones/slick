@@ -1,0 +1,14 @@
+# https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+# https://github.com/brigade/scss-lint/blob/master/config/default.yml
+
+linters:
+    Comment:
+        enabled: false
+    ImportPath:
+        leading_underscore: true
+    ElsePlacement:
+        enabled: true
+        style: new_line # or 'same_line'
+    SelectorFormat:
+        enabled: true
+        convention: hyphenated_BEM # 'hyphenated_lowercase' or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
