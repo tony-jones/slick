@@ -1,0 +1,20 @@
+// Media Query
+@mixin breakpoint($size) {
+  if $size == small {
+    @media (min-width: $small-breakpoint) {
+      @content;
+    }
+  }
+
+  else if $size == medium {
+    @media (min-width: $medium-breakpoint) {
+      @content;
+    }
+  }
+
+  else if $size == large {
+    @media (min-width: $large-breakpoint) {
+      @content;
+    }
+  }
+}
