@@ -1,5 +1,4 @@
 // Grid
-// Device Breakpoints @see https://www.google.com/design/spec/layout/adaptive-ui.html
 
 .grid {
   display: flex; // Set parent container to flex
@@ -44,10 +43,3 @@
 .grid--baseline {
   align-self: baseline;
 }
-
-// .cell-width-20 {
-//   flex: 0 0 20%;
-// }
-// .cell-offset-20 {
-//   margin-left: 20%;
-// }

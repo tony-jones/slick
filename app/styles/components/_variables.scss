@@ -1,1 +1,11 @@
 // Typography
+
+// Grid
+// Device Breakpoints @see https://www.google.com/design/spec/layout/adaptive-ui.html
+$small-columns: 4 !default;
+$medium-columns: 8 !default;
+$large-columns: 12 !default;
+
+$small-breakpoint: 320px !important;
+$medium-breakpoint: 480px !important;
+$large-breakpoint: 840px !important;
