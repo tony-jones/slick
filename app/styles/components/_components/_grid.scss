@@ -1,0 +1,36 @@
+// Grid
+
+.grid {
+  display: flex; // Set parent container to flex
+  flex-direction: row; // Flex items are stacked in a row from left-to-right
+  flex-wrap: wrap; // Flex items are displayed in multiple rows if needed.
+}
+
+.cell {
+  box-sizing: border-box;
+}
+
+// Align items to the top of the container
+.grid--top {
+  align-self: flex-start;
+}
+
+// Align items to the middle of the container
+.grid--middle {
+  align-self: center;
+}
+
+// Align items to the bottom of the container
+.grid--bottom {
+  align-self: flex-end;
+}
+
+// Stretch the items to fit with distributed space
+.grid--stretch {
+  align-self: stretch;
+}
+
+// Align the items' baselines
+.grid--baseline {
+  align-self: baseline;
+}

@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible
+
+# TEAM
+
+  Anthony Jones -- Product Designer -- @iamtonybagels
+  Hopefully more dev's to come. Contact me if you are interested.
+
+# THANKS
+
+  Web Starter Kit
+  Material Design Lite
+  Materialize
+  Twitter Bootstrap
+  HTML5 Boilerplate
+  Normalize
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JavaScript
