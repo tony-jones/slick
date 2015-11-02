@@ -30,10 +30,7 @@ At present, the official aim is to support the following browsers:
 * Chrome 34, 35
 * Safari 7, 8
 * Opera 23, 24
-* iOS Safari 7, 8
-* Opera Coast
-* Android / Chrome 4.4, 4.4.3
-* BlackBerry 10
+
 
 ## Troubleshooting
 
