@@ -1,1 +1,23 @@
 // Helper
+
+
+// Small screens from 320px to 480px
+@include breakpoint(small) {
+  .hide-on-small {
+    display: none !important;
+  }
+}
+
+// Medium screens from 480px to 840px
+@include breakpoint(medium) {
+  .hide--on-medium {
+    display: none !important;
+  }
+}
+
+// Large screens from 840px and larger
+@include breakpoint(large) {
+  .hide-on-large {
+    display: none !important;
+  }
+}
