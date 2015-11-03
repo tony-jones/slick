@@ -20,3 +20,21 @@
     }
   }
 }
+
+// Grid widths calculations
+@mixin cell-size($columns, $gutter, $screen-size) {
+  @for $i from 1 through $columns {
+    .#{$screen-size}#{$i} {
+      flex: 0 0 calc(#{(($i / $columns) * 100)+"%"} - #{$gutter});
+    }
+  }
+}
+
+// Grid offsets calculations
+@mixin cell-offset($columns, $gutter, $screen-size) {
+  @for $i from 1 through $columns - 1 {
+    .offset-#{$screen-size}#{$i} {
+      margin-left: calc(#{(($i / $columns) * 100)+"%"} + #{$gutter / 2});
+    }
+  }
+}

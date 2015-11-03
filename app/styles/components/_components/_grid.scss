@@ -1,10 +1,12 @@
 // Grid
 
-// Block for grid layout
+
+// Make container a grid component
 .grid {
   display: flex; // Set parent container to flex
   flex-direction: row; // Flex items are stacked in a row from left-to-right
   flex-wrap: wrap; // Flex items are displayed in multiple rows if needed.
+  padding: $grid-padding;
 
   // Remove padding from outer container
   &.grid--no-space {
@@ -17,10 +19,11 @@
   }
 }
 
-// Grid cell element
+// Make a grid cell element
 .grid__cell {
   box-sizing: border-box;
   flex: 1;
+  margin: $grid-margin;
 }
 
 // Align items to the top of the container
@@ -48,17 +51,22 @@
   align-self: baseline;
 }
 
+// Columns size class names are shortened to non BEM for sanity.
+
 // Small screens from 320px to 480px
 @include breakpoint(small) {
-  flex: 0 0 40%;
+  @include cell-size($small-columns, $grid-gutter, s);
+  @include cell-offset($small-columns, $grid-gutter, s);
 }
 
 // Medium screens from 480px to 840px
 @include breakpoint(medium) {
-  flex: 0 0 40%;
+  @include cell-size($medium-columns, $grid-gutter, m);
+  @include cell-offset($medium-columns, $grid-gutter, m);
 }
 
 // Large screens from 840px and larger
 @include breakpoint(large) {
-  flex: 0 0 40%;
+  @include cell-size($large-columns, $grid-gutter, l);
+  @include cell-offset($large-columns, $grid-gutter, l);
 }

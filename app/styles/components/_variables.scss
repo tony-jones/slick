@@ -6,9 +6,10 @@ $small-columns: 4 !default;
 $medium-columns: 8 !default;
 $large-columns: 12 !default;
 
-$small-breakpoint: 320px !important;
-$medium-breakpoint: 480px !important;
-$large-breakpoint: 840px !important;
+$small-breakpoint: 320px !default;
+$medium-breakpoint: 480px !default;
+$large-breakpoint: 840px !default;
 
-$grid-gutter: 1rem !important;
-$grid-margin: 1rem !important;
+$grid-gutter: 1rem !default;
+$grid-margin: .5rem !default;
+$grid-padding: .5rem !default;
