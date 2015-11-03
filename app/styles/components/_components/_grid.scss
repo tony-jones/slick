@@ -19,6 +19,31 @@
   }
 }
 
+// Align items to the top of the container
+.grid--top {
+  align-items: flex-start;
+}
+
+// Align items to the middle of the container
+.grid--middle {
+  align-items: center;
+}
+
+// Align items to the bottom of the container
+.grid--bottom {
+  align-items: flex-end;
+}
+
+// Stretch the items to fit with distributed space
+.grid--stretch {
+  align-items: stretch;
+}
+
+// Align the items' baselines
+.grid--baseline {
+  align-items: baseline;
+}
+
 // Make a grid cell element
 .grid__cell {
   box-sizing: border-box;
@@ -26,29 +51,19 @@
   margin: $grid-margin;
 }
 
-// Align items to the top of the container
-.grid--top {
+// Positioned at the beginning of the container
+.grid__cell--cell-top {
   align-self: flex-start;
 }
 
-// Align items to the middle of the container
-.grid--middle {
+//Positioned at the center of the container
+.grid__cell--cell-center {
   align-self: center;
 }
 
-// Align items to the bottom of the container
-.grid--bottom {
+// positioned at the end of the container
+.grid__cell--cell-bottom {
   align-self: flex-end;
-}
-
-// Stretch the items to fit with distributed space
-.grid--stretch {
-  align-self: stretch;
-}
-
-// Align the items' baselines
-.grid--baseline {
-  align-self: baseline;
 }
 
 // Columns size class names are shortened to non BEM for sanity.
