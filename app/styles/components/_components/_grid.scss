@@ -51,17 +51,17 @@
   margin: $grid-margin;
 }
 
-// Positioned at the beginning of the container
+// Position cell at the beginning of the container
 .grid__cell--cell-top {
   align-self: flex-start;
 }
 
-//Positioned at the center of the container
+// Position cell at the center of the container
 .grid__cell--cell-center {
   align-self: center;
 }
 
-// positioned at the end of the container
+// Position cell at the end of the container
 .grid__cell--cell-bottom {
   align-self: flex-end;
 }
