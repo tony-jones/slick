@@ -3,6 +3,7 @@
 
 // Make container a grid component
 .grid {
+  box-sizing: border-box;
   display: flex; // Set parent container to flex
   flex-direction: row; // Flex items are stacked in a row from left-to-right
   flex-wrap: wrap; // Flex items are displayed in multiple rows if needed.
@@ -12,11 +13,15 @@
   &.grid--no-space {
     padding: 0;
 
-    // Remove margin from cells if no space is chosen
+    // Remove margin from cells if 'grid--no-space' is chosen
     .grid__cell {
       margin: 0;
     }
   }
+}
+// Reverse the direction of the grid
+.grid--reversed {
+  flex-direction: row-reverse;
 }
 
 // Align items to the top of the container
@@ -57,7 +62,7 @@
 }
 
 // Position cell at the center of the container
-.grid__cell--cell-center {
+.grid__cell--cell-middle {
   align-self: center;
 }
 
