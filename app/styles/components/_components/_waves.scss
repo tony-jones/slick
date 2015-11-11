@@ -1,18 +1,18 @@
 .waves-effect {
-  position: relative;
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
-  user-select: none;
+  position: relative;
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 
     .waves-ripple {
       position: absolute;
       border-radius: 50%;
       width: 100px;
       height: 100px;
-      margin-top:-50px;
-      margin-left:-50px;
+      margin-top: -50px;
+      margin-left: -50px;
       opacity: 0;
       background: rgba(0,0,0,0.2);
       $gradient: rgba(0,0,0,0.2) 0,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 60%,rgba(255,255,255,0) 70%;
@@ -30,54 +30,54 @@
     }
 
     &.waves-classic .waves-ripple {
-      background: rgba(0,0,0,0.2);
+      background: rgba(0, 0, 0, .2);
     }
 
     &.waves-classic.waves-light .waves-ripple {
-      background: rgba(255,255,255,0.4);
+      background: rgba(255, 255, 255, .4);
     }
 }
 
 .waves-notransition {
-    @include waves-transition(none #{"!important"});
+  @include waves-transition(none #{"!important"});
 }
 
 .waves-button,
 .waves-circle {
-    @include waves-transform(translateZ(0));
-    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  @include waves-transform(translateZ(0));
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
 .waves-button,
 .waves-button:hover,
 .waves-button:visited,
 .waves-button-input {
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  color: inherit;
   background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  color: inherit;
+  cursor: pointer;
   font-size: 1em;
-  line-height:1em;
+  line-height: 1em;
+  outline: none;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
   z-index: 1;
 }
 
 .waves-button {
-  padding: 0.85em 1.1em;
-  border-radius: 0.2em;
+  border-radius: .2em;
+  padding: .85em 1.1em;
 }
 
 .waves-button-input {
   margin: 0;
-  padding: 0.85em 1.1em;
+  padding: .85em 1.1em;
 }
 
 .waves-input-wrapper {
-  border-radius: 0.2em;
+  border-radius: .2em;
   vertical-align: bottom;
 
   &.waves-button {
