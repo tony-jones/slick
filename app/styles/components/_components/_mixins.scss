@@ -21,10 +21,21 @@
   }
 }
 
-// Grid widths calculations
-@mixin cell-size($columns, $gutter, $screen-size) {
+// Grid
+
+// Default Grid widths calculations
+@mixin cell-size-default($columns, $gutter, $screen-size) {
   @for $i from 1 through $columns {
-    .#{$screen-size}#{$i} {
+    .col-#{$i} {
+      flex: 0 0 calc(#{(($i / $columns) * 100)+"%"} - #{$gutter});
+    }
+  }
+}
+
+// Device Specific Grid widths calculations
+@mixin cell-size-device($columns, $gutter, $screen-size) {
+  @for $i from 1 through $columns {
+    .col-#{$screen-size}#{$i} {
       flex: 0 0 calc(#{(($i / $columns) * 100)+"%"} - #{$gutter});
     }
   }
@@ -37,4 +48,17 @@
       margin-left: calc(#{(($i / $columns) * 100)+"%"} + #{$gutter / 2});
     }
   }
+}
+
+// Waves
+@mixin waves-transition($transition) {
+  transition: $transition;
+}
+
+@mixin waves-transform($string) {
+  transform: $string;
+}
+
+@mixin waves-box-shadow($shadow) {
+  box-shadow: $shadow;
 }

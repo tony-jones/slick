@@ -13,6 +13,7 @@
     <title>Visual Style Guide</title>
   </head>
   <body>
+    
     <div class="grid">
      <div class="grid__cell s1 m1 l1">1</div>
      <div class="grid__cell s1 m1 l1">1</div>
@@ -28,21 +29,21 @@
      <div class="grid__cell s1 m1 l1">1</div>
     </div>
     <div class="grid">
-     <div class="grid__cell s4 m8 l4">1</div>
-     <div class="grid__cell s2 m4 l4">1</div>
-     <div class="grid__cell s2 m4 l4">1</div>
+     <div class="grid__cell s4 m8 l4"></div>
+     <div class="grid__cell s2 m4 l4"></div>
+     <div class="grid__cell s2 m4 l4"></div>
     </div>
     <div class="grid">
-     <div class="grid__cell s4">1</div>
-     <div class="grid__cell s4">1</div>
-     <div class="grid__cell s4">1</div>
-     <div class="grid__cell s4">1</div>
+     <div class="grid__cell s4"></div>
+     <div class="grid__cell s4"></div>
+     <div class="grid__cell s4"></div>
+     <div class="grid__cell s4"></div>
     </div>
     <div class="grid">
-     <div class="grid__cell l3 grid__cell--cell-middle">
+     <div class="grid__cell col-2 col-l3 grid__cell--cell-middle">
        This cell should be middle aligned.
      </div>
-     <div class="grid__cell l3">
+     <div class="grid__cell col-2 col-l3">
        Pellentesque sagittis vel erat ac laoreet.
        Phasellus ac aliquet enim, eu aliquet sem.
        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -50,58 +51,70 @@
        Curabitur pulvinar dolor lectus, quis porta turpis ullamcorper nec.
        Quisque eget varius turpis, quis iaculis nibh.
      </div>
-     <div class="grid__cell l3 grid__cell--cell-top">
+     <div class="grid__cell col-2 col-l3 grid__cell--cell-top">
        This cell should be top-aligned.
      </div>
-     <div class="grid__cell l3 grid__cell--cell-bottom">
+     <div class="grid__cell col-2 col-l3 grid__cell--cell-bottom">
        This cell should be bottom-aligned.
      </div>
 
     </div>
     <div class="grid">
        <div class="grid__cell s1 m1 l3 green">
-         <div class="grid__cell l3 red">1</div>
+         <div class="grid__cell l3 red"></div>
        </div>
-       <div class="grid__cell l3 red">1</div>
+       <div class="grid__cell l3 red"></div>
      </div>
      <div class="grid">
-      <div class="grid__cell l2 s4">CS 2 (4 on phone)</div>
-      <div class="grid__cell l2 s4">CS 2 (4 on phone)</div>
-      <div class="grid__cell l2 s4">CS 2 (4 on phone)</div>
-      <div class="grid__cell l2 s4">CS 2 (4 on phone)</div>
+      <div class="grid__cell col-4 col-l3">CS 2 (4 on phone)</div>
+      <div class="grid__cell col-4 col-l3">CS 2 (4 on phone)</div>
+      <div class="grid__cell col-4 col-l3">CS 2 (4 on phone)</div>
+      <div class="grid__cell col-4 col-l3">CS 2 (4 on phone)</div>
+      <div class="grid__cell col-4 col-l3">CS 2 (4 on phone)</div>
     </div>
     <div class="grid">
-      <div class="grid__cell l4 s4">6 (8 tablet)</div>
-      <div class="grid__cell l4 s4">4 (6 tablet)</div>
-      <div class="grid__cell l4 s4">2 (4 phone)</div>
+      <div class="grid__cell s3 m4 l8">6 (8 tablet)</div>
+      <div class="grid__cell s3 m4 l8">4 (6 tablet)</div>
+      <div class="grid__cell s3 m4 l8">2 (4 phone)</div>
     </div>
     <div class="grid">
-     <div class="grid__cell l6 m8">6 (8 tablet)</div>
-     <div class="grid__cell l4 m6">4 (6 tablet)</div>
-     <div class="grid__cell l2 s4">2 (4 phone)</div>
+     <div class="grid__cell col-6 col-m-8">6 (8 tablet)</div>
+     <div class="grid__cell grid-ripple col-4 col-m-6 ripple">4 (6 tablet)
+     </div>
+     <div class="grid__cell col-2 col-s-1">2 (1 phone)</div>
+     <div class="grid__cell">
+       <button class="ripple">Login</button>
+       <button class="ripple" data-ripple-color="#89669b" style="background:white; color:black;">Login</button>
+
+       <button class="yourButton">
+         Click Me
+         <link class="ripple-js" />
+       </button>
+     </div>
    </div>
-    <style>
-      .grid__cell {
-        background-color: #00BFD5;
-        border-radius: 2px;
-        color: white;
-        padding: 15px;
-      }
-      .red {
-        background-color: red;
-      }
-      .orange {
-        background-color: orange;
-      }
-      .yellow {
-        background-color: yellow;
-      }
-      .green {
-        background-color: green;
-      }
-      .blue {
-        background-color: blue;
-      }
+   <style>
+     .grid__cell {
+       background-color: #00BFD5;
+       border-radius: 2px;
+       color: white;
+       padding: 15px;
+     }
+     .red {
+       background-color: red;
+     }
+     .orange {
+       background-color: orange;
+     }
+     .yellow {
+       background-color: yellow;
+     }
+     .green {
+       background-color: green;
+     }
+     .blue {
+       background-color: blue;
+     }
     </style>
+    <script src="scripts/ripple.js"></script>
   </body>
 </html>
