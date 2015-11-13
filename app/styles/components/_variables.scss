@@ -1,3 +1,13 @@
+// Colors
+$primary-color-dark: color("slick-blue", '300') !default;
+$primary-color: color("slick-blue", '500') !default;
+$primary-color-light:  #b3e5fc;
+$primary-color-text:   #fff;
+$accent-color:         #009688;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #b6b6b6;
+
 // Typography
 
 // Grid
@@ -15,8 +25,6 @@ $grid-margin: .5rem !default;
 $grid-padding: .5rem !default;
 
 // Buttons
-
-
 $button-primary-color: 1px !default;
 $button-secondary-color: 1px !default;
 $button-primary-disabled-color: 1px !default;
