@@ -1,15 +1,15 @@
 ## Overview
 
-Frankenstein is a responsive front-end framework that doesn’t use any
+Slick is a responsive front-end framework that doesn’t use any
 JavaScript frameworks. It pulls in inspiration and some features from frameworks
 such as Twitter Bootstrap, Materialize, Material Design Lite, and other article
-I have read in the past. Hence the name Frankenstein.
+I have read in the past. Hence the name Slick.
 
 
 ## Use in Your project
 
 CDN links to come with examples of how to include in your HTML
-will use https://cdnjs.com/ to host frankenstein.css and frankenstein.js
+will use https://cdnjs.com/ to host slick.css and slick.js
 Version for development and minified version for production.
 
 ## Building From Source
@@ -44,7 +44,7 @@ Built on Web Starter Kit, which includes [Mobile HTML5 Boilerplate](http://html5
 
 ## Contributing
 
-Contributions, questions and comments are all welcome and encouraged. For code contributions, please see the [Contribution guide](CONTRIBUTING.md) before submitting a pull request. [Website](https://frankenstein.github.io) related issues should be filed on the [Frankenstein](https://github.com/tony-jones/frankenstein/issues/new) issue tracker.
+Contributions, questions and comments are all welcome and encouraged. For code contributions, please see the [Contribution guide](CONTRIBUTING.md) before submitting a pull request. [Website](https://slick.github.io) related issues should be filed on the [slick](https://github.com/tony-jones/slick/issues/new) issue tracker.
 
 ## License
 

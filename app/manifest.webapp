@@ -1,8 +1,8 @@
 {
   "version": "0.0.1",
-  "name": "Frankenstein",
+  "name": "Slick",
   "launch_path": "/index.html",
-  "description": "A Frankenstonian type Framework",
+  "description": "A Slick type Framework",
   "icons": {
     "128": "/images/touch/icon-128x128.png"
   },
@@ -18,8 +18,8 @@
   },
   "locales": {
     "en": {
-      "name": "Frankenstein",
-      "description": "A Frankenstonian type Framework"
+      "name": "Slick",
+      "description": "A Slick type Framework"
     }
   }
 }

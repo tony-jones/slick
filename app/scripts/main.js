@@ -1,6 +1,6 @@
 /*!
  *
- *  Frankenstein
+ *  Slick
  *  Copyright 2015 Anthony Jones All rights reserved.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
