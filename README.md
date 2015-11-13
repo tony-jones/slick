@@ -2,8 +2,7 @@
 
 Slick is a responsive front-end framework that doesn’t use any
 JavaScript frameworks. It pulls in inspiration and some features from frameworks
-such as Twitter Bootstrap, Materialize, Material Design Lite, and other article
-I have read in the past. Hence the name Slick.
+such as Twitter Bootstrap, Materialize, Material Design Lite, articles and tutorials.
 
 
 ## Use in Your project
