@@ -24,10 +24,17 @@
 // Grid
 
 // Default Grid widths calculations
-@mixin cell-size-default($columns, $gutter, $screen-size) {
-  @for $i from 1 through $columns {
+@mixin cell-size-default($columns, $gutter, $screen-columns) {
+  @for $i from 1 through $grid-default-columns {
     .col-#{$i} {
-      flex: 0 0 calc(#{(($i / $columns) * 100)+"%"} - #{$gutter});
+      $column-percent: ($i / $columns) * 100;
+      //@warn $column-percent;
+      @if ($column-percent > 100) {
+        flex: 0 0 calc(#{ 100% } - #{$gutter});
+      }
+      @else {
+        flex: 0 0 calc(#{(($i / $columns) * 100)+"%"} - #{$gutter});
+      }
     }
   }
 }

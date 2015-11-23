@@ -75,21 +75,21 @@
 
 // Small screens from 320px to 480px
 @include breakpoint(small) {
-  @include cell-size-default($grid-small-columns, $grid-gutter, s);
+  @include cell-size-default($grid-small-columns, $grid-gutter, $grid-default-columns);
   @include cell-size-device($grid-small-columns, $grid-gutter, s);
   @include cell-offset($grid-small-columns, $grid-gutter, s);
 }
 
 // Medium screens from 480px to 840px
 @include breakpoint(medium) {
-  @include cell-size-default($grid-medium-columns, $grid-gutter, m);
+  @include cell-size-default($grid-medium-columns, $grid-gutter, $grid-default-columns);
   @include cell-size-device($grid-medium-columns, $grid-gutter, m);
   @include cell-offset($grid-medium-columns, $grid-gutter, m);
 }
 
 // Large screens from 840px and larger
 @include breakpoint(large) {
-  @include cell-size-default($grid-large-columns, $grid-gutter, l);
-  @include cell-size-device($grid-large-columns, $grid-gutter, l);
+  @include cell-size-default($grid-large-columns, $grid-gutter, $grid-default-columns);
+  //@include cell-size-device($grid-large-columns, $grid-gutter, l);
   @include cell-offset($grid-large-columns, $grid-gutter, l);
 }

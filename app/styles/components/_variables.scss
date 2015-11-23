@@ -1,6 +1,6 @@
 // Colors
-$primary-color-dark: color("slick-blue", '300') !default;
-$primary-color: color("slick-blue", '500') !default;
+$primary-color-dark: color('slick-blue', '300') !default;
+$primary-color: color('slick-blue', '500') !default;
 $primary-color-light:  #b3e5fc;
 $primary-color-text:   #fff;
 $primary-text-color:   #212121;
@@ -12,9 +12,11 @@ $divider-color:        #b6b6b6;
 
 // Grid
 // Device Breakpoints @see https://www.google.com/design/spec/layout/adaptive-ui.html
+$grid-default-columns: 12 !default;
 $grid-small-columns: 4 !default;
 $grid-medium-columns: 8 !default;
 $grid-large-columns: 12 !default;
+
 
 $grid-small-breakpoint: 320px !default;
 $grid-medium-breakpoint: 480px !default;
@@ -25,8 +27,14 @@ $grid-margin: .5rem !default;
 $grid-padding: .5rem !default;
 
 // Buttons
-$button-primary-color: 1px !default;
-$button-primary-disabled-color: 1px !default;
+$btn-border-radius: 3px;
+$btn-border-color: #e0e0e0;
+$btn-bg-color: #fa8072;
+$btn-mnml-hover: #e0e0e0;
+
+$button-primary-color: blue !default;
+$button-primary-disabled-color: color('slick-blue', '200') !default;
+$button-primary-disabled-bg: color('slick-blue', '300') !default;
 
 $button-secondary-color: 1px !default;
 $button-secondary-disabled-color: 1px !default;
