@@ -1,7 +1,6 @@
 ## Overview
 
-Slick is a responsive front-end framework that doesn’t use any
-JavaScript frameworks. It pulls in inspiration and some features from frameworks
+Slick is a responsive front-end framework with a flexbox grid system. It pulls in inspiration and some features from frameworks
 such as Twitter Bootstrap, Materialize, Material Design Lite, articles and tutorials.
 
 
