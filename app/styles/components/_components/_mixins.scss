@@ -23,12 +23,11 @@
 
 // Grid
 
-// Default Grid widths calculations
-@mixin cell-size-default($columns, $gutter, $screen-columns) {
+// Default grid widths calculations
+@mixin cell-size-default($columns, $gutter) {
   @for $i from 1 through $grid-default-columns {
     .col-#{$i} {
       $column-percent: ($i / $columns) * 100;
-      //@warn $column-percent;
       @if ($column-percent > 100) {
         flex: 0 0 calc(#{ 100% } - #{$gutter});
       }
@@ -39,7 +38,29 @@
   }
 }
 
-// Device Specific Grid widths calculations
+// Default specific grid offsets calculations
+@mixin cell-offset-default($columns, $gutter, $screen-size) {
+  @for $i from 1 through $grid-default-columns - 1 {
+    .offset-#{$i} {
+      $column-percent: ($i / $columns) * 100;
+      @if ($screen-size ==  's') {
+        @if ($column-percent > 87.5) {
+          margin-left: 0;
+        }
+      }
+      @else if ($screen-size ==  'm') {
+        @if ($column-percent > 75) {
+          margin-left: 0;
+        }
+      }
+      @else {
+        margin-left: calc(#{(($i / $columns) * 100)+"%"} + #{$gutter / 2});
+      }
+    }
+  }
+}
+
+// Device specific grid widths calculations
 @mixin cell-size-device($columns, $gutter, $screen-size) {
   @for $i from 1 through $columns {
     .col-#{$screen-size}#{$i} {
@@ -48,8 +69,8 @@
   }
 }
 
-// Grid offsets calculations
-@mixin cell-offset($columns, $gutter, $screen-size) {
+// Device specific grid offsets calculations
+@mixin cell-offset-device($columns, $gutter, $screen-size) {
   @for $i from 1 through $columns - 1 {
     .offset-#{$screen-size}#{$i} {
       margin-left: calc(#{(($i / $columns) * 100)+"%"} + #{$gutter / 2});
