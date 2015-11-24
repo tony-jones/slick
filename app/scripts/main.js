@@ -16,9 +16,45 @@
  *  limitations under the License
  *
  */
-(function () {
+(function() {
   'use strict';
 
-  // begin JS here
+  /* From Modernizr */
+  function whichTransitionEvent() {
+    var t;
+    var el = document.createElement('fakeelement');
+    var transitions = {
+      'transition': 'transitionend',
+      'OTransition': 'oTransitionEnd',
+      'MozTransition': 'transitionend',
+      'WebkitTransition': 'webkitTransitionEnd'
+    };
+
+    for (t in transitions) {
+      if (el.style[t] !== undefined) {
+        return transitions[t];
+      }
+    }
+  }
+
+  var transitionEvent = whichTransitionEvent();
+  var button = document.querySelector('.button');
+
+  button.addEventListener('click', function() {
+    if (button.classList) {
+      button.classList.add('animate');
+    }
+    else {
+      button.className += '' + 'animate';
+    }
+
+    button.addEventListener(transitionEvent, customFunction);
+
+  });
+
+  function customFunction(event) {
+    button.removeEventListener(transitionEvent, customFunction);
+    button.classList.toggle('animate');
+  }
 
 })();
