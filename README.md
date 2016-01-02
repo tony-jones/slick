@@ -16,6 +16,10 @@ Clone this repository and build on what is included in the `app` directory.
 
 Be sure to look over the [installation docs](docs/install.md) to verify your environment is prepared. Once you have verified, check out the [commands](docs/commands.md) available to get started.
 
+## BEM Methodology
+
+Check out this [guide](docs/bem.md)guide for specifics on naming conventions and how we used BEM for a better UX.
+
 ## Accessibility
 
 All components are tested to be web accessible and 508/ADA compliant.
