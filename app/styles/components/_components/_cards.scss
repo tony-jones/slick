@@ -1,0 +1,38 @@
+.card {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--image img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.card--content {
+  display: flex;
+  flex: 1 0 auto; /* We have to add a basis for IE10/11 */
+  flex-direction: column;
+  padding: 15px;
+  background-color: white;
+  color: black;
+
+  p {
+    flex: 1 0 auto; /* We have to add a basis for IE10/11 */
+  }
+
+}
+
+.card--button {
+  background: #7b5a9e;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  padding: 1em .75em;
+  text-decoration: none;
+  transition: background .3s ease;
+}
