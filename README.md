@@ -18,7 +18,7 @@ Be sure to look over the [installation docs](docs/install.md) to verify your env
 
 ## BEM Methodology
 
-Check out this [guide](docs/bem.md)guide for specifics on naming conventions and how we used BEM for a better UX.
+Check out this [guide](docs/bem.md) for specifics on naming conventions and how we used BEM for a better UX.
 
 ## Accessibility
 
