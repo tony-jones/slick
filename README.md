@@ -1,8 +1,14 @@
 ## Overview
-
+The Best CSS Framework ever, because it's homegrown.
 Slick is a responsive front-end framework with a flexbox grid system. It pulls in inspiration and some features from frameworks
 such as Twitter Bootstrap, Materialize, Material Design Lite, articles and tutorials.
 
+## Progress
+- Demo site coming soon
+- Grid SASS complete (CSS Flexbox)
+- BEM Methodology
+- Buttons SASS almost complete
+- Cards SASS almost complete
 
 ## Use in Your project
 
